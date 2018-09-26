@@ -1,0 +1,175 @@
+/* 
+ * This is a modified version of the Dark & Simplenote theme by buke[1]
+ * 
+ * [1]: https://userstyles.org/styles/147392/dark-simplenote
+*/
+.sidebar {
+  background-color: rgb(35, 38, 43);
+  border-bottom: none;
+}
+
+.note #static_content {
+  padding: 1em 6em;
+} 
+
+/* Center note and give equal padding */
+.sideview,
+.tagbar,
+.toolbar,
+.searchfield,
+.sidebar {
+  border-color: rgba(100%, 100%, 100%, 0.1);
+}
+
+.toolbar,
+.app {
+  border-bottom: none;
+}
+
+/* Search field, tag list, tag bar */
+.searchfield {
+  box-shadow: none;
+}
+
+.popover .menu,
+.tagbar .as-list {
+  background: rgba(255, 255, 255, 0.95);
+}
+
+.notes li .note-preview-title,
+.searchfield,
+.tagbar input {
+  color: white;
+}
+
+.empty .button {
+  background: none;
+}
+
+.deleteTag {
+  opacity: 1;
+  filter: grayscale(1) brightness(4);
+} 
+
+.deleteTag:hover {
+  filter: none;
+}
+
+.tagbar {
+  padding-left: 0;
+  left: 360px;
+} 
+
+ul.as-selections li.as-selection-item:hover {
+  color: rgb(35, 38, 43);
+  background-color: rgb(64, 142, 203);
+}
+.tagbar .as-list {
+  width: 50% !important;
+}
+.tagbar .as-result-item {
+  border: none;
+  color: rgb(35, 38, 43);
+}
+.popover .menu li a:hover,
+.popover .menu li a:focus,
+.tagbar .as-result-item.active {
+  background: rgba(64, 142, 203, 0.95);
+}
+.tagbar .as-result-item.active:first-child {
+  border-top-left-radius: inherit;
+  border-top-right-radius: inherit;
+}
+.tagbar .as-result-item.active:last-child {
+  border-bottom-left-radius: inherit;
+  border-bottom-right-radius: inherit;
+}
+
+/* Notes list */
+.notes li {
+  text-shadow: none;
+}
+.notes li:hover {
+  background-color: rgba(64, 142, 203, 0.2);
+}
+.notes li.selected,
+code {
+  background: rgba(64, 142, 203, 0.5);
+} 
+
+/* Text properties */
+.note #static_content h2,
+.note #static_content h1,
+.note #static_content h3,
+.note #static_content h4,
+.note #static_content h5,
+.note #static_content h6,
+.note #static_content li,
+.note #static_content p,
+.note #static_content strong,
+.note #txtarea {
+  text-shadow: none;
+}
+
+.note #static_content a {
+  color: rgb(109, 209, 226);
+} 
+
+code {
+  color: white;
+}
+
+::-moz-selection {
+  background: rgb(229, 218, 218);
+  color: rgb(35, 38, 43);
+  text-shadow: none;
+}
+
+.note #static_content ul {
+  list-style-type: disc;
+}
+
+.note #static_content ul li ul,
+.note #static_content ul li ul li ul li ul {
+  list-style-type: circle;
+}
+.note #static_content ul li ul li ul {
+  list-style-type: square;
+}
+.note #static_content ul li ul li ul li ul li ul {
+  list-style-type: initial;
+}
+
+.tagmenu.button span,
+.header #user_account_menu,
+.left-side-menu .sn-rocker-option {
+  color: rgb(64, 142, 203);
+}
+
+.left-side-menu .sn-rocker-option {
+  text-shadow: none;
+  background: rgb(35, 38, 43);
+}
+
+#view_mode_edit.button.sn-rocker-option,
+#view_mode_markdown.button.sn-rocker-option {
+  border: 0.2em solid #408ecb;
+}
+.left-side-menu .sn-rocker-option.active,
+.left-side-menu .sn-rocker-option.active:hover {
+  background-color: rgb(64, 142, 203);
+}
+.left-side-menu .sn-rocker-option:hover {
+  background-color: #333;
+}
+.left-side-menu .sn-rocker-option {
+  border: none;
+}
+
+/* Get rid of footer */
+.wrapper {
+  bottom: 0px;
+}
+.footer {
+  display: none;
+}

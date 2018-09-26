@@ -1,0 +1,10 @@
+/* Hides "Trending" and other stuff on the right */
+.trends,
+.dashboard-right {
+  display: none;
+}
+
+/* Hides promoted tweets (CSS-only adblock :P) */
+div[data-promoted='true'] {
+  display: none !important;
+}
