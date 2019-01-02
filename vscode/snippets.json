@@ -1,0 +1,12 @@
+{
+  "Jest Test Suite": {
+    "prefix": "dit",
+    "description": "Creates an empty test suite with one test",
+    "body": ["describe('$1', () => {", "\tit('$2', async () => {", "\t\t$3", "\t})", "})"]
+  },
+  "Jest Test": {
+    "prefix": "it",
+    "description": "Creates an empty Jest test",
+    "body": ["it('$1', async() => {", "\t$2", "})"]
+  }
+}
