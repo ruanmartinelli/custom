@@ -1,0 +1,13 @@
+.promo {
+    display: none !important;
+    height: 0px !important;
+}
+
+.feed-container{
+    margin-top: -12px !important;
+}
+
+/* "Upgrade" button */
+.experiment > button:nth-child(1){
+    display: none !important;
+}
