@@ -1,4 +1,4 @@
-# Autmatically changes the Node.js version via nvm when
+# Automatically changes the Node.js version via nvm when
 # cd-ing into a folder with a .nvmrc file inside.
 # The code below should be placed in a .zshrc, after the nvm initialization.
 
