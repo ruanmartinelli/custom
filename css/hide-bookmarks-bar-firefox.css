@@ -1,0 +1,19 @@
+/**
+ * Add the following CSS to a userChrome.css file.
+ *
+ * How to create one: https://www.howtogeek.com/334716/how-to-customize-firefoxs-user-interface-with-userchrome.css/
+ **/
+
+#main-window #PersonalToolbar {
+  visibility: collapse !important;
+}
+
+#main-window[title^="about:newtab"] #PersonalToolbar,
+#main-window[title^="New Tab"] #PersonalToolbar,
+#main-window[title^="Nightly"] #PersonalToolbar,
+#main-window[title^="Mozilla Firefox"] #PersonalToolbar,
+#main-window[title^="Firefox"] #PersonalToolbar,
+#main-window[title^="新标签页"] #PersonalToolbar,
+#main-window[title^="Customize Firefox"] #PersonalToolbar {
+  visibility: visible !important;
+}
